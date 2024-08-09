@@ -1,4 +1,10 @@
-# summarizer/text_preprocessor.py
+from logger.logger import get_logger
+
+logger = get_logger(__name__)
 
 def preprocess_text(text):
-    return text.replace('\n', ' ').strip()
+    try:
+        return text.replace('\n', ' ').strip()
+    except Exception as e:
+        logger.error(f"Failed to preprocess text: {str(e)}")
+        raise
