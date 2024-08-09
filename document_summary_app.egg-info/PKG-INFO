@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: document_summary_app
+Version: 1.0.0
+Summary: A FastAPI-based document summarization application.
+Home-page: 
+Author: Ayush Kumar Srivastava
+Author-email: ayush050419@gmail.com
+License: None
+Classifier: License :: OSI Approved :: None
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: python-docx
+Requires-Dist: python-multipart
+
+A FastAPI-based document summarization application.

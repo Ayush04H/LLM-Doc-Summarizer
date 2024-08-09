@@ -1,0 +1,24 @@
+
+
+# Include the requirements file
+include requirements.txt
+
+# Include all files in the config directory
+recursive-include config *
+
+# Include all files in the logger directory
+recursive-include logger *
+
+# Include all files in the summarizer directory
+recursive-include summarizer *
+
+# Include all files in the backend directory
+recursive-include backend *
+
+# Include any other necessary files or directories
+# Example: Include all .json files if you had any
+# recursive-include data *.json
+
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
