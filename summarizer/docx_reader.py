@@ -1,3 +1,5 @@
+# summarizer/docx_reader.py
+
 import docx
 from logger.logger import get_logger
 
