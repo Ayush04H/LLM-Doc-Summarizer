@@ -1,3 +1,5 @@
+# summarizer/main.py
+
 from summarizer.docx_reader import read_docx
 from summarizer.text_preprocessor import preprocess_text
 from summarizer.text_summarizer import summarize_long_text
