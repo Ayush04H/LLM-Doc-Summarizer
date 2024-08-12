@@ -1,4 +1,3 @@
-backend
 config
 logger
 summarizer

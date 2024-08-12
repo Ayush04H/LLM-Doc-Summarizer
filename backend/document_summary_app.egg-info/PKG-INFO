@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: document_summary_app
-Version: 1.1.0
+Version: 1.1.1
 Summary: A FastAPI-based document summarization application.
 Home-page: 
 Author: Ayush Kumar Srivastava

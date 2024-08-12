@@ -3,7 +3,7 @@
 import logging
 import os
 
-def get_logger(name, log_dir='D:\\placements2025\\document_summary_app\\logs', log_file='app.log'):
+def get_logger(name, log_dir='D:\\placements2025\\document_summary_app\\backend\\logs', log_file='app.log'):
     """
     Set up a logger that writes to both the console and a file in the specified directory.
     
