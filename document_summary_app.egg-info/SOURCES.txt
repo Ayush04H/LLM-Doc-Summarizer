@@ -3,7 +3,6 @@ requirements.txt
 setup.py
 backend/__init__.py
 backend/app.py
-backend/requirements.txt
 config/__init__.py
 config/configuration.py
 document_summary_app.egg-info/PKG-INFO
