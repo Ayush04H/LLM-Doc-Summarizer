@@ -6,6 +6,8 @@ LLM-Doc-Summarizer is a web application designed to simplify the process of summ
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
+- [Backend Setup](#backend-setup)
+- [Frontend Setup](#frontend-setup)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
@@ -35,31 +37,3 @@ LLM-Doc-Summarizer is a web application designed to simplify the process of summ
 ```bash
 git clone https://github.com/Ayush04H/LLM-Doc-Summarizer.git
 cd LLM-Doc-Summarizer
-
-### Backend Setup
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn backend.app:app --reload
-
-### Frontend Setup
-```bash
-cd ../doc-summary-frontend
-npm install
-
-
-
-## Usage
-
-1. **Ensure the backend server is running:**
-   ```bash
-   uvicorn backend.app:app --reload
-
-2. **Open your web browser and navigate to http://localhost:3000.**
-3. **Upload a .docx file, specify the summary length, and click the "Summarize" button.**
-4. **The application will process the document and display the summary on the page.**
-
-
-
-
-
