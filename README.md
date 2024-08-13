@@ -1,39 +1,119 @@
+
 # LLM-Doc-Summarizer
 
-LLM-Doc-Summarizer is a web application designed to simplify the process of summarizing lengthy documents using advanced natural language processing (NLP) techniques. Leveraging the power of the `facebook/bart-large-cnn` model, this application provides users with concise and accurate summaries of uploaded documents, making it easier to digest and understand large volumes of text.
-
-## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Backend Setup](#backend-setup)
-- [Frontend Setup](#frontend-setup)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+LLM-Doc-Summarizer is a document summarization application that leverages the power of the `facebook/bart-large-cnn` model. The project provides a web-based interface where users can upload `.docx` files and receive concise summaries based on a specified summary length. The backend is built with FastAPI, while the frontend is created using React.
 
 ## Features
-- **Document Upload**: Users can upload `.docx` files for summarization.
-- **Customizable Summary Length**: Users can specify the desired length of the summary, tailoring the output to their needs.
-- **Real-time Summarization**: Summaries are generated instantly after the document is uploaded, ensuring quick turnaround.
-- **User-friendly Interface**: The frontend is simple and intuitive, allowing users to easily interact with the application.
 
-## Technologies Used
-- **Backend**: [FastAPI](https://fastapi.tiangolo.com/) - A modern, fast (high-performance) web framework for building APIs with Python 3.7+.
-- **Frontend**: [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
-- **Model**: [facebook/bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn) - A pre-trained NLP model designed for text summarization.
-- **Server**: [Uvicorn](https://www.uvicorn.org/) - A lightning-fast ASGI server implementation, using [uvloop](https://github.com/MagicStack/uvloop) and [httptools](https://github.com/MagicStack/httptools).
+- **Document Upload**: Users can upload `.docx` files to the application.
+- **Customizable Summary Length**: Users can specify the desired length of the summary.
+- **Real-time Summarization**: The app provides a summary in real-time after processing the uploaded document.
+- **Error Handling**: Graceful error handling ensures that users are notified of any issues during the summarization process.
 
-## Installation
+## Getting Started
 
 ### Prerequisites
-- Python 3.7+
-- Node.js 14+
-- npm or yarn
 
-### Clone the Repository
-```bash
-git clone https://github.com/Ayush04H/LLM-Doc-Summarizer.git
-cd LLM-Doc-Summarizer
+- Python 3.8+
+- Node.js and npm
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/Ayush04H/LLM-Doc-Summarizer.git
+   cd LLM-Doc-Summarizer
+   ```
+
+2. **Backend Setup**
+
+   Navigate to the backend directory and create a virtual environment:
+
+   ```bash
+   cd backend
+   python -m venv venv
+   source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+   ```
+
+   Install the required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Frontend Setup**
+
+   Navigate to the frontend directory and install the dependencies:
+
+   ```bash
+   cd ../doc-summary-frontend
+   npm install
+   ```
+
+### Running the Application
+
+1. **Run the Backend**
+
+   Navigate to the backend directory and start the FastAPI server:
+
+   ```bash
+   cd backend
+   uvicorn app:app --reload
+   ```
+
+   The backend server will run on `http://127.0.0.1:8000`.
+
+2. **Run the Frontend**
+
+   Navigate to the frontend directory and start the React development server:
+
+   ```bash
+   cd ../doc-summary-frontend
+   npm start
+   ```
+
+   The frontend will run on `http://localhost:3000`.
+
+### Usage
+
+1. Open the application in your web browser at `http://localhost:3000`.
+2. Upload a `.docx` file using the provided form.
+3. Specify the desired summary length.
+4. Click the "Summarize" button.
+5. View the generated summary on the page.
+
+### Project Structure
+
+- **backend/**: Contains the FastAPI backend application.
+  - **summarizer/**: Contains the core summarization logic.
+  - **config/**: Configuration files for the application.
+  - **app.py**: Main entry point for the FastAPI server.
+  
+- **doc-summary-frontend/**: Contains the React frontend application.
+  - **src/**: Source code for the frontend, including components and styles.
+  - **public/**: Public assets and HTML files.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+### Commands to Clone and Fork the Repository
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/Ayush04H/LLM-Doc-Summarizer.git
+   ```
+
+2. **Fork the Repository**
+
+   Visit the repository on GitHub and click on the "Fork" button on the top right to create your own copy.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries or further information, please feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/ayush-srivastava-aks04102002/).
