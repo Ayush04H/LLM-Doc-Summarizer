@@ -13,7 +13,7 @@ recursive-include logger *
 recursive-include summarizer *
 
 # Include all files in the backend directory
-recursive-include backend *
+recursive-include test *
 
 # Include any other necessary files or directories
 # Example: Include all .json files if you had any
