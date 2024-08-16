@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: document_summary_app
-Version: 1.1.1
+Version: 1.1.2
 Summary: A FastAPI-based document summarization application.
 Home-page: 
 Author: Ayush Kumar Srivastava
@@ -22,5 +22,6 @@ Requires-Dist: transformers
 Requires-Dist: torch
 Requires-Dist: python-docx
 Requires-Dist: python-multipart
+Requires-Dist: pytest
 
 A FastAPI-based document summarization application.

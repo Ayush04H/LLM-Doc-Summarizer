@@ -4,3 +4,4 @@ transformers
 torch
 python-docx
 python-multipart
+pytest

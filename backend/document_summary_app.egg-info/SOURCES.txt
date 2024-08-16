@@ -16,3 +16,10 @@ summarizer/main.py
 summarizer/text_preprocessor.py
 summarizer/text_splitter.py
 summarizer/text_summarizer.py
+test/test_summarizer.py
+test/.pytest_cache/.gitignore
+test/.pytest_cache/CACHEDIR.TAG
+test/.pytest_cache/README.md
+test/.pytest_cache/v/cache/lastfailed
+test/.pytest_cache/v/cache/nodeids
+test/.pytest_cache/v/cache/stepwise
