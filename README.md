@@ -93,6 +93,26 @@ LLM-Doc-Summarizer is a document summarization application that leverages the po
 - **doc-summary-frontend/**: Contains the React frontend application.
   - **src/**: Source code for the frontend, including components and styles.
   - **public/**: Public assets and HTML files.
+## Docker 
+
+### To Pull Docker file 
+```bash
+docker pull ayush04h/summarizer:latest
+
+```
+
+### To Run Container
+```bash
+docker run --rm -it -p 8080:8000 -v "$(pwd)/temp:/app/temp" summarizer bash
+```
+
+### Inside Docker Bash 
+```bash
+uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### To Access API for Running Container
+- After starting the container, open a web browser and go to http://localhost:8080/docs to access the FastAPI Swagger UI or test the API endpoints.
 
 ## Contributing
 
@@ -113,6 +133,8 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+
 
 ## Contact
 
